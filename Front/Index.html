@@ -1,9 +1,522 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>AboWeb</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="/Assets/External/Flaticons/solid/solid.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/BootstrapCustom.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/Shared.min.css" rel="stylesheet" />
+    <link href="/Assets/Css/Index.min.css" rel="stylesheet" />
+
 </head>
 <body>
+
+
+    <header class="MainHeader">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header pull-left">
+                    <a href="/" class="navbar-brand">
+                        <img class="LogoImage" src="/Assets/Img/LogoWhite.png" />
+                    </a>
+                </div>
+                <div class="navbar-header pull-right NavTogleBtn">
+                    <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav navbar-nav">
+                        <a href="#" class="hidden-xs BtnRegister">Free Registration</a>
+                        <div class="dropdown hidden-xs BtnLanguage">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="/Assets/Img/fr.jpg" /> <i class="flaticon solid down-2 DropDownIcon"></i>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#en"><img src="/Assets/Img/en.jpg" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse navbar-right LinksList">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown Tour">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tour <i class="flaticon solid down-2 DropDownIcon"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#WhatIsAboWeb">What Is AboWeb</a></li>
+                                <li><a href="#Eshop">AboShop & AboLink</a></li>
+                                <li><a href="#Reminders">Reminders</a></li>
+                                <li><a href="#Pricing">Pricing</a></li>
+                                <li><a href="#Features">Features</a></li>
+                                <li><a href="#Testimonials">Testimonials</a></li>
+                                <li><a href="#Contact">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-xs"><i class="devider"></i></li>
+                        <li><a href="#">Log in</a></li>
+                        <li class="visible-xs"><a href="#">Free Registration</a></li>
+                        <li class="visible-xs Lang"><a href="#en"><img src="Assets/Img/en.jpg" /> English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="MainContent">
+        <div class="TopBanner">
+            <div class="ImageBox">
+                <div style="background-image: url('/Assets/Img/TopBanner.jpg')"></div>
+                <div class="blur" style="background-image: url('/Assets/Img/TopBannerBlured.jpg')"></div>
+            </div>
+            <div class="ImageOverBox">
+                <div class="container">
+                    <h2>Manage Your</h2>
+                    <h1>Press subscriptions the easy way</h1>
+                    <div class="Buttons">
+                        <a href="#" class="BtnGetStarted">Get Started</a>
+                        <a href="#" class="BtnWatchDemo">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="WhatIsAboWeb">
+            <a id="WhatIsAboWeb" class="Ancor"></a>
+            <div class="container">
+                <div class="row Row1">
+                    <div class="col-sm-6 ImageWrapper animated">
+                        <img class="Img1" src="/Assets/Img/WhatIsAboWeb1.png" />
+                    </div>
+                    <div class="col-sm-6 ArticleWrapper">
+                        <article class="AboArticle">
+                            <header>Aboweb is a press subscription web app.</header>
+                            <section>
+                                Press Subscription application that helps you manage your client databes with the help of advanced billing, contact, invoicing management system.
+                                <ul class="checkmarks">
+                                    <li>Manage subscriptions</li>
+                                    <li>Biling reminders & editors</li>
+                                    <li>Intensive customer details</li>
+                                </ul>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+                <div class="row Row2">
+                    <div class="col-sm-6 ArticleWrapper">
+                        <article class="AboArticle">
+                            <header>Better Knowledge of your clients and subscribers</header>
+                            <section>
+                                A redesigned contact dashboard to have a clear vision of your client. All essential data are grouped on the same window.
+                            </section>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 ImageWrapper animated">
+                        <img class="Img1" src="/Assets/Img/WhatIsAboWeb2_1.png" />
+                        <img class="Img2" src="/Assets/Img/WhatIsAboWeb2_2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Revenue">
+            <div class="container">
+                <div class="row Row1">
+                    <div class="col-sm-6 ImageWrapper">
+                        <img class="Img1" src="/Assets/Img/RevenueGraph.png" />
+                        <div class="ChartBar animated">
+                            <div class="SlidingValue">
+                                <div class="Curency">€ 1,975</div>
+                                <div class="Percent">+15%</div>
+                                <div class="Dot"></div>
+                            </div>
+                            <div class="Bar"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 ArticleWrapper">
+                        <article class="AboArticle">
+                            <header>Scan your revenue in real-time.</header>
+                            <section>
+                                Press Subscription application that helps you manage your client databes with the help of advanced billing, contact, invoicing management system.
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Eshop">
+            <a id="Eshop" class="Ancor"></a>
+            <div class="container">
+                <div class="row Row1">
+                    <div class="col-sm-12">
+                        <header>Eshop from scratch with AboShop or AboLink</header>
+                        <p>AboWeb provides 2 feature packed solutions for our customers who need to build a shop from scratch or those who already have an ecommerce site and need to link with our platform.</p>
+                    </div>
+                </div>
+                <div class="row Row2">
+                    <div class="Devider"></div>
+                    <div class="col-sm-6 Left">
+                        <img class="Img1" src="/Assets/Img/AboShopIcon.png" />
+                        <h3>AboShop</h3>
+                        <p>
+                            Build your eShop from sctrach with a flurry of features such as client management, coupon handling, billing & subscription platforms.<br /><br />
+                            Allow your customers to register, follow their payments, check their subscription history and much more.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 Right">
+                        <img class="Img1" src="/Assets/Img/AboLinkIcon.png" />
+                        <h3>AboLink</h3>
+                        <p>
+                            Already have an existing shop? Connect it using abolink api library and enjoy our full set  of services such as:<br /><br />
+                            Customer records, customer registration, history, payment integration mulitple shop configurations and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Reminders">
+            <a id="Reminders" class="Ancor"></a>
+            <div class="container-fluid">
+                <div class="row Row1">
+                    <div class="col-sm-6 Left">
+                        <ul class="RemindersSlider">
+                            <li class="Slide Email" data-slideno="1"><div class="Title">Send Reminders by Email</div></li>
+                            <li class="Slide Sms active" data-slideno="2"><div class="Title active">Send Reminders by SMS</div></li>
+                            <li class="Slide Letter" data-slideno="3"><div class="Title">Send Reminders by Letter</div></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 Right">
+                        <div class="wrapper">
+                            <article class="AboArticle">
+                                <header>Maximize your <br />re-subscriptions</header>
+                                <section>
+                                    AboWeb allows you to manage your reminders subscription by defining multiple levels reminder. Each level determines a personalized message and send the message support.
+                                </section>
+                                <footer>
+                                    <a href="#" class="Reminder Email" title="Send Reminders by Email" data-slideno="1"><i></i></a>
+                                    <a href="#" class="Reminder Sms active" title="Send Reminders by SMS" data-slideno="2"><i></i></a>
+                                    <a href="#" class="Reminder Letter" title="Send Reminders by Letter" data-slideno="3"><i></i></a>
+                                </footer>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Pricing">
+            <a id="Pricing" class="Ancor"></a>
+            <div class="container">
+                <div class="row Row1">
+                    <div class="col-sm-12">
+                        <header>Pricing Plans</header>
+                        <p>Press Subscription application that helps you manage your client databes with the help of advanced billing, contact, invoicing management system.</p>
+                    </div>
+                </div>
+                <div class="row Row2">
+                    <div class="col-sm-3">
+                        <article class="PriceBox half">
+                            <header>
+                                <h3>Starter</h3>
+                                <p>50.00€<span> / par mois</span></p>
+                            </header>
+                            <ul>
+                                <li>Max <b>3000</b> abonnés</li>
+                                <li>Mono titre</li>
+                                <li>HotLine Uniquement Chat & Mail</li>
+                            </ul>
+                            <footer>
+                                <a href="#Starter">Sélectionnez le plan</a>
+                            </footer>
+                        </article>
+                        <article class="PriceBox half">
+                            <header>
+                                <h3>Basic</h3>
+                                <p>125.00€<span> / par mois</span></p>
+                            </header>
+                            <ul>
+                                <li>Max <b>10,000</b> abonnés</li>
+                                <li>Mono titre</li>
+                                <li>HotLine Uniquement Chat & Mail</li>
+                            </ul>
+                            <footer>
+                                <a href="#Basic">Sélectionnez le plan</a>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-sm-3">
+                        <article class="PriceBox full">
+                            <header>
+                                <h3>Standard</h3>
+                                <p>250.00€<span> / par mois</span></p>
+                            </header>
+                            <ul>
+                                <li>Max <b>10,000</b> abonnés</li>
+                                <li>Mono titre</li>
+                                <li>Plateforme eMailing</li>
+                                <li>HotLine Uniquement Chat & Mail</li>
+                            </ul>
+                            <footer>
+                                <a href="#Standard">Sélectionnez le plan</a>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-sm-3">
+                        <article class="PriceBox full">
+                            <header>
+                                <h3>Pro</h3>
+                                <p>570.00€<span> / par mois</span></p>
+                            </header>
+                            <ul>
+                                <li>Max <b>30,000</b> abonnés</li>
+                                <li>Multi titre</li>
+                                <li>Plateforme eMailing</li>
+                                <li>Plateforme Webservice</li>
+                                <li>WebBoutique</li>
+                                <li>HotLine Uniquement Chat & Mail</li>
+                            </ul>
+                            <footer>
+                                <a href="#Pro">Sélectionnez le plan</a>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-sm-3">
+                        <article class="PriceBox full">
+                            <header>
+                                <h3>Expert</h3>
+                                <p>950.00€<span> / par mois</span></p>
+                            </header>
+                            <ul>
+                                <li>Max <b>30,000</b> abonnés</li>
+                                <li>Multi titre</li>
+                                <li>Plateforme eMailing</li>
+                                <li>Plateforme Webservice</li>
+                                <li>WebBoutique</li>
+                                <li>AboReport (Business Decision module)</li>
+                                <li>HotLine Uniquement Chat & Mail</li>
+                            </ul>
+                            <footer>
+                                <a href="#Expert">Sélectionnez le plan</a>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+                <div class="row Row3">
+                    <div class="col-sm-12">
+                        <i class="flaticon solid credit-card-1"></i> + <i class="flaticon solid repeat-1"></i> Credit Card + Wire transfer aceppted !
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Features">
+            <a id="Features" class="Ancor"></a>
+            <div class="container">
+                <div class="row Row1">
+                    <div class="col-sm-12">
+                        <header>Powerful set of Features</header>
+                        <p>Full set of features that will help your press subscription conversion.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid article-2"></i>
+                            <header>Reccuring Billing</header>
+                            <p>Simplifies the entire process of creating a recurring billing cycle.</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid pie-graph-1"></i>
+                            <header>Rich Reporting Data</header>
+                            <p>Aboweb provides rich reporting data tailored to your business & needs.</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid checkmark-3"></i>
+                            <header>Reminder Subs</header>
+                            <p>Manage your reminders subscription by defining multiple levels reminder. </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid repeat-4"></i>
+                            <header>Variety of Billing Cycles</header>
+                            <p>In Aboweb you can as many plans as your need and a variety of different billing cycles.</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid brush-1"></i>
+                            <header>Plans with Styles</header>
+                            <p>Each subscription plan can have its own design with corresponding pricing.</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid mail-4"></i>
+                            <header>Automated Notifications</header>
+                            <p>Recurly automatically notifies your users with our automated emails.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid cart-3"></i>
+                            <header>Eshop</header>
+                            <p>Compatible avec toutes les solutions eCommerce du marché ( Power boutique, OS commerce, Prestashop) ainsi que tous les systèmes de paiement ( PayPal, Paybox, API bancaire)</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="SepaPaymentIcon"></i>
+                            <header>Sepa Payment</header>
+                            <p>AboWeb intégre Slimpay : "Guaranteed Payment", la première offre paneuropéenne de "liability shift" pour les paiements par prélèvement</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid cloud-upload-1"></i>
+                            <header>Automatic importation</header>
+                            <p>Gérer automatiquement les offres de vos collecteurs d'abonnement</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid notebook-3"></i>
+                            <header>Task Managment</header>
+                            <p>Nouveau ! Nous soyez plus en retard dans la gestion de vos taches quotidiennes </p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid call-3"></i>
+                            <header>Dedicate Hotline Access</header>
+                            <p>Each subscription plan can have its own design with corresponding pricing.</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="FeaturesBox">
+                            <i class="flaticon solid flag-3"></i>
+                            <header>Multi Language</header>
+                            <p>Nouveautés : Intégration native de nombreuses langues avec les taux de tva associés</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Testimonials">
+            <a id="Testimonials" class="Ancor"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 Left">
+                        <div class="Title">134 happy Clients, and counting...</div>
+                        <div class="ClientBox clearfix">
+                            <a href="#"><img src="/Assets/Img/ClientLogo1.jpg" /></a>
+                            <article>
+                                <header>Anderson E. Larssen from <a href="#">nike.com</a></header>
+                                <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                            </article>
+                        </div>
+                        <div class="ClientBox clearfix">
+                            <a href="#"><img src="/Assets/Img/ClientLogo2.jpg" /></a>
+                            <article>
+                                <header>Melissa G. Ortega from <a href="#">LwLight.com</a></header>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                            </article>
+                        </div>
+                        <div class="ClientBox clearfix">
+                            <a href="#"><img src="/Assets/Img/ClientLogo3.jpg" /></a>
+                            <article>
+                                <header>Esteban nobile from <a href="#">Lorem ipsum company</a></header>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 Right">
+                        <div class="Title">How it works ?</div>
+                        <div class="Steps animated">
+                            <div class="Step No1">
+                                <i>1</i>Register for an account by clicking <a href="#">create account</a>.
+                            </div>
+                            <div class="Step No2">
+                                <i>2</i>Easily integrate all your data to your new dashboard.
+                            </div>
+                            <div class="Step No3">
+                                <i>3</i>If you need any support we are here to help you. You can communicate with our customer support team.
+                            </div>
+                            <div class="Step No4">
+                                <i><span class="flaticon solid checkmark-1"></span></i>Congrats you have created your account !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Contact">
+            <a id="Contact" class="Ancor"></a>
+            <div class="wrapper">
+                <div itemscope itemtype="http://data-vocabulary.org/Organization" class="ContactBox">
+                    <h1 itemprop="name">Transat</h1>
+                    <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" class="Address">
+                        <span itemprop="street-address">4 Bis, Rue de la Pyramide</span>
+                        <span itemprop="postal-code">92100</span>
+                        <span itemprop="locality">Boulogne</span>
+                    </div>
+                    <div itemprop="telephone" class="Tel">09 73 87 23 10</div>
+                    <a href="mailto:info@aboweb.com" itemprop="email" class="Email">info@aboweb.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="MainFooter">
+        <div class="container">
+            <div class="row TopRow">
+                <div class="col-sm-4">
+                    <img src="Assets/Img/LogoWhite.png" />
+                </div>
+                <div class="col-sm-8 RightColumn">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="#">Terms & Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Free Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row BottomRow">
+                <div class="col-sm-12">
+                    <span>All rights reserved by AboWeb Technologie 2014</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/Assets/External/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="/Assets/External/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Assets/External/jquery-visible/jquery.visible.min.js"></script>
+    <script src="/Assets/Js/Shared.js"></script>
+    <script src="/Assets/Js/Index.js"></script>
 
 </body>
 </html>
