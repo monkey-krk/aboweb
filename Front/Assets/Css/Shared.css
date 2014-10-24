@@ -96,6 +96,10 @@ input[type="checkbox"]:focus {
     line-height: 1.4;
   }
 }
+.tooltip-inner {
+  padding: 10px;
+  font-size: 14px;
+}
 ul.checkmarks {
   margin: 30px 0;
   padding: 0;
@@ -118,6 +122,168 @@ ul.checkmarks li:before {
   color: #95c534;
   margin-right: 15px;
   font-size: 26px;
+}
+.PopUp {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: 100px;
+  width: 500px;
+  padding: 15px;
+  background-color: #ebf3f6;
+  border-radius: 5px;
+  box-shadow: 0 0 0 9999px rgba(17, 44, 56, 0.8);
+  z-index: 999999;
+}
+.PopUp.active {
+  display: block;
+}
+.PopUp header {
+  position: relative;
+  text-align: center;
+  padding: 15px 0 20px 0;
+}
+.PopUp header .ClosePopUp {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #576369;
+  font-size: 24px;
+  opacity: 0.5;
+}
+.PopUp header .ClosePopUp:hover {
+  opacity: 1;
+}
+.PopUp header .ClosePopUp:before {
+  font-family: 'Flaticons Solid';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "";
+}
+.PopUp header .Icon {
+  display: inline-block;
+}
+.PopUp header h4 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: lighter;
+  line-height: 1.3;
+}
+.PopUp section {
+  padding: 0 35px 15px 35px;
+}
+.PopUp section input[type="text"],
+.PopUp section input[type="password"],
+.PopUp section input[type="email"] {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #112c38;
+  margin-bottom: 10px;
+  outline: none;
+  box-shadow: none;
+  overflow: hidden;
+  line-height: normal;
+}
+.PopUp section input[type="text"]::-webkit-input-placeholder,
+.PopUp section input[type="password"]::-webkit-input-placeholder,
+.PopUp section input[type="email"]::-webkit-input-placeholder {
+  font-weight: lighter;
+  color: #a5afb4;
+}
+.PopUp section input[type="text"]:-moz-placeholder,
+.PopUp section input[type="password"]:-moz-placeholder,
+.PopUp section input[type="email"]:-moz-placeholder {
+  font-weight: lighter;
+  color: #a5afb4;
+  opacity: 1;
+}
+.PopUp section input[type="text"]::-moz-placeholder,
+.PopUp section input[type="password"]::-moz-placeholder,
+.PopUp section input[type="email"]::-moz-placeholder {
+  font-weight: lighter;
+  color: #a5afb4;
+  opacity: 1;
+}
+.PopUp section input[type="text"]:-ms-input-placeholder,
+.PopUp section input[type="password"]:-ms-input-placeholder,
+.PopUp section input[type="email"]:-ms-input-placeholder {
+  font-weight: lighter;
+  color: #a5afb4;
+}
+.PopUp section input[type="text"]:focus,
+.PopUp section input[type="password"]:focus,
+.PopUp section input[type="email"]:focus {
+  background-color: #d6e5eb;
+}
+.PopUp section .devider {
+  height: 15px;
+}
+.PopUp section .InputWithIcon {
+  position: relative;
+}
+.PopUp section .InputWithIcon i {
+  opacity: 0.3;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+}
+.PopUp section .InputWithIcon i.TooltipHolder {
+  opacity: 0.6;
+}
+.PopUp section .DoubleInputRow .InputWithIcon {
+  width: 50%;
+  float: left;
+}
+.PopUp section .DoubleInputRow .InputWithIcon:first-child {
+  padding-right: 5px;
+}
+.PopUp section .DoubleInputRow .InputWithIcon:last-child {
+  padding-left: 5px;
+}
+.PopUp section .DoubleInputRow input {
+  width: 100%;
+}
+.PopUp footer {
+  padding: 0 35px 35px 35px;
+}
+.PopUp footer div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.PopUp footer div:first-child {
+  width: 100%;
+}
+.PopUp footer span {
+  font-size: 14px;
+}
+.PopUp footer button {
+  height: 50px;
+  background-color: #33b1eb;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 0 30px;
+  white-space: nowrap;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.PopUp footer button:hover {
+  background-color: #1599d6;
 }
 /*#endregion */
 /*#region MainHeader */

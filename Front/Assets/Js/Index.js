@@ -1,6 +1,4 @@
-﻿/// <reference path="../External/jQuery/jquery-2.1.1.min.js" />
-
-$(document).ready(function () {
+﻿$(document).ready(function () {
 
     // TopBanner Image Height
     var WindowHeight = $(window).height();
@@ -45,10 +43,42 @@ $(document).ready(function () {
         }
     }
 
-      
-
-
-
-
+    //Popup Open
+    $(".BtnRegister, .BtnRegisterFooter, .BtnGetStarted").click(function (e) {
+        $(".PopUp.CreateAccount").addClass("active");
+        e.preventDefault();
+    });
+    $(".BtnLogIn, .BtnLogInFooter").click(function (e) {
+        $(".PopUp.LogIn").addClass("active");
+        e.preventDefault();
+    });
+    $(".BtnRegisterPopup").click(function (e) {
+        $(".PopUp.LogIn").removeClass("active");
+        $(".PopUp.CreateAccount").addClass("active");
+        e.preventDefault();
+    });
+    $(".BtnLoginPopup").click(function (e) {
+        $(".PopUp.CreateAccount").removeClass("active");
+        $(".PopUp.LogIn").addClass("active");
+        e.preventDefault();
+    });
+    $(".BtnCreditCard").click(function (e) {
+        $(".PopUp.CreditCard").addClass("active");
+        e.preventDefault();
+    });
+    $(".BtnWireTransfer").click(function (e) {
+        $(".PopUp.Sepa").addClass("active");
+        e.preventDefault();
+    });
+    $(".BtnWatchDemo").click(function (e) {
+        $(".PopUp.WatchDemo").addClass("active");
+        $('.WatchDemoVideo')[0].play();
+        e.preventDefault();
+    });
+    $(".CloseWatchDemoPopUp").click(function (e) {
+        $('.WatchDemoVideo')[0].pause();
+        $(".PopUp.WatchDemo").removeClass("active");
+        e.preventDefault();
+    });
 
 });

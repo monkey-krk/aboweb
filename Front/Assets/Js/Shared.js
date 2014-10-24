@@ -37,4 +37,17 @@
         });
     });
 
+    //Close PopUp button
+    if ($(".ClosePopUp").length > 0) {
+        $(".ClosePopUp").click(function (e) {
+            $(".PopUp").removeClass("active");
+            e.preventDefault();
+        });
+    }
+
+    //Tooltip
+    if ($(".TooltipHolder").length > 0) {
+        $(".TooltipHolder").tooltip();
+    }
+
 });
