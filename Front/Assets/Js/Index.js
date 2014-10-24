@@ -44,34 +44,58 @@
     }
 
     //Popup Open
+    function RecalculateTop(element) {
+        var WindowHeight = $(window).height();
+        var PopUpHeight = element.height();
+        if (PopUpHeight < WindowHeight) {
+            var $margin = (WindowHeight - PopUpHeight) / 2;
+            element.css("margin-top", $margin + "px");
+        } else {
+            element.css("position", "absolute");
+        }
+    }
     $(".BtnRegister, .BtnRegisterFooter, .BtnGetStarted").click(function (e) {
-        $(".PopUp.CreateAccount").addClass("active");
+        var $Popup = $(".PopUp.CreateAccount");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
         e.preventDefault();
     });
     $(".BtnLogIn, .BtnLogInFooter").click(function (e) {
-        $(".PopUp.LogIn").addClass("active");
+        var $Popup = $(".PopUp.LogIn");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
         e.preventDefault();
     });
     $(".BtnRegisterPopup").click(function (e) {
         $(".PopUp.LogIn").removeClass("active");
-        $(".PopUp.CreateAccount").addClass("active");
+        var $Popup = $(".PopUp.CreateAccount");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
         e.preventDefault();
     });
     $(".BtnLoginPopup").click(function (e) {
         $(".PopUp.CreateAccount").removeClass("active");
-        $(".PopUp.LogIn").addClass("active");
+        var $Popup = $(".PopUp.LogIn");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
         e.preventDefault();
     });
     $(".BtnCreditCard").click(function (e) {
-        $(".PopUp.CreditCard").addClass("active");
+        var $Popup = $(".PopUp.CreditCard");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
         e.preventDefault();
     });
     $(".BtnWireTransfer").click(function (e) {
-        $(".PopUp.Sepa").addClass("active");
+        var $Popup = $(".PopUp.Sepa");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
         e.preventDefault();
     });
     $(".BtnWatchDemo").click(function (e) {
-        $(".PopUp.WatchDemo").addClass("active");
+        var $Popup = $(".PopUp.WatchDemo");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
         $('.WatchDemoVideo')[0].play();
         e.preventDefault();
     });
@@ -80,5 +104,6 @@
         $(".PopUp.WatchDemo").removeClass("active");
         e.preventDefault();
     });
+    
 
 });
