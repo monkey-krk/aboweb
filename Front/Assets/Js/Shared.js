@@ -10,7 +10,7 @@
                 $('.MainHeader').data('size', 'small');
                 $('.MainHeader').fadeOut(250, function () {
                     $('.MainHeader').addClass("sticky").css("margin-top", "0px");
-                    $(".LogoImage").attr("src", "/Assets/Img/LogoBlack.png");
+                    $(".LogoImage").attr("src", "Assets/Img/LogoBlack.png");
                     $('.MainHeader').fadeIn(250);
                 });
             }
@@ -20,7 +20,7 @@
                 $('.MainHeader').data('size', 'big');
                 $('.MainHeader').fadeOut(250, function () {
                     $('.MainHeader').removeClass("sticky").css("margin-top", "10px");
-                    $(".LogoImage").attr("src", "/Assets/Img/LogoWhite.png");
+                    $(".LogoImage").attr("src", "Assets/Img/LogoWhite.png");
                     $('.MainHeader').fadeIn(250);
                 });
             }
