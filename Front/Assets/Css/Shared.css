@@ -1,22 +1,22 @@
 ﻿/*#region Font */
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('/Assets/Font/brandon_light-webfont.eot');
-  src: url('/Assets/Font/brandon_light-webfont.eot?#iefix') format('embedded-opentype'), url('/Assets/Font/brandon_light-webfont.woff2') format('woff2'), url('/Assets/Font/brandon_light-webfont.woff') format('woff'), url('/Assets/Font/brandon_light-webfont.ttf') format('truetype'), url('/Assets/Font/brandon_light-webfont.svg#brandon_grotesquelight') format('svg');
+  src: url('../Font/brandon_light-webfont.eot');
+  src: url('../Font/brandon_light-webfont.eot?#iefix') format('embedded-opentype'), url('../Font/brandon_light-webfont.woff2') format('woff2'), url('../Font/brandon_light-webfont.woff') format('woff'), url('../Font/brandon_light-webfont.ttf') format('truetype'), url('../Font/brandon_light-webfont.svg#brandon_grotesquelight') format('svg');
   font-weight: lighter;
   font-style: normal;
 }
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('/Assets/Font/brandon_reg-webfont.eot');
-  src: url('/Assets/Font/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'), url('/Assets/Font/brandon_reg-webfont.woff2') format('woff2'), url('/Assets/Font/brandon_reg-webfont.woff') format('woff'), url('/Assets/Font/brandon_reg-webfont.ttf') format('truetype'), url('/Assets/Font/brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+  src: url('../Font/brandon_reg-webfont.eot');
+  src: url('../Font/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'), url('../Font/brandon_reg-webfont.woff2') format('woff2'), url('../Font/brandon_reg-webfont.woff') format('woff'), url('../Font/brandon_reg-webfont.ttf') format('truetype'), url('../Font/brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('/Assets/Font/brandon_bld-webfont.eot');
-  src: url('/Assets/Font/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'), url('/Assets/Font/brandon_bld-webfont.woff2') format('woff2'), url('/Assets/Font/brandon_bld-webfont.woff') format('woff'), url('/Assets/Font/brandon_bld-webfont.ttf') format('truetype'), url('/Assets/Font/brandon_bld-webfont.svg#brandon_grotesquebold') format('svg');
+  src: url('../Font/brandon_bld-webfont.eot');
+  src: url('../Font/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'), url('../Font/brandon_bld-webfont.woff2') format('woff2'), url('../Font/brandon_bld-webfont.woff') format('woff'), url('../Font/brandon_bld-webfont.ttf') format('truetype'), url('../Font/brandon_bld-webfont.svg#brandon_grotesquebold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
@@ -41,7 +41,7 @@ body {
   color: #576369;
   font-size: 16px;
   line-height: 1;
-  font-family: 'Brandon Grotesque', sans-serif;
+  font-family: 'Brandon Grotesque', 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   background: #ffffff;
@@ -75,7 +75,7 @@ input[type="checkbox"]:focus {
 /*#endregion */
 /*#region Shared */
 .AboArticle header {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: lighter;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -185,7 +185,7 @@ ul.checkmarks li:before {
   height: 45px;
   border: none;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 18px;
   font-weight: normal;
   color: #112c38;
@@ -193,6 +193,7 @@ ul.checkmarks li:before {
   outline: none;
   box-shadow: none;
   overflow: hidden;
+  line-height: 1;
   line-height: normal;
 }
 .PopUp section input[type="text"]::-webkit-input-placeholder,
