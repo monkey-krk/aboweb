@@ -322,7 +322,7 @@ ul {
         span {
             font-size:14px;
         }
-        button {
+        button, .btn {
             
             height:50px;
             background-color:@blue;
@@ -340,6 +340,13 @@ ul {
             &:hover {
                 background-color: darken(@blue, 10%);
             }
+        }
+        .btn {
+            display:inline-block;
+            padding-top:12px;
+        }
+        &.text-center {
+            text-align:center;
         }
     }
 }

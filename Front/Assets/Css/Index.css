@@ -1151,4 +1151,15 @@
   height: 34px;
   margin-bottom: 5px;
 }
-/*#endregion */
+.Confirmation header .Icon {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAtCAYAAADhoUi4AAAB0ElEQVRo3u3Zz0rDQBAG8Ggt9daLngrRvINvUdR68u6TeKwVrCA+jNfSEv9cRPAi+AJa0IMeNc7ArCxhkmy6u8km7OGjKTTZ+TVf29AE14u9ALJGj03OOj7iRgfyCvmFJA3NDxk6Qpe0IF/iDHGgK0jP4Xr1aEZ55k8OdAR5p+0HSOQgJqLZcMY3yHEeCLcHkBk9/4CMHMKMaKaEZhxI82eCMBuQMX1RYC5rriCuPZXmGdOMgSpIZAhZ1lxBuWJLmin9GmUQJoTMa6qgXLE5zRLogrgKXkC6FiFdWiOrYtogroKxpQpGdOy8ihkDiQrGliooVyzOqZhRkKjExGAF0xWblDyeNiirguEKxwhXqJg1EDfQQYl9Dw28IcZBXGWKKlj29ZWDRPYV3nGdM1o5qOgzMTRUsUpBXKXOIOcWf5itg7jfFZuXTpWBMDt0cYnZtbRGpaAq4kEe5EEe1G7QfzzIgzzIg1oHwv+3nyA3bQAh5oVmbzxIxiwg/SaDWAwHquuWyS3kDrKlg+FAp5DNGkD3tP5jASoXI4O+Ld/QLQJtEyYPVYiRQSeQZ7o1biOBJkoJI4NcCYdSxrgI4lDKGFdBaZQyxmWQQM3oCqCvut8f+yXVNN4nAhkAAAAASUVORK5CYII=);
+  width: 52px;
+  height: 45px;
+  margin-bottom: 5px;
+}
+.Confirmation section {
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  padding-bottom: 30px;
+}

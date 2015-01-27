@@ -268,7 +268,8 @@ ul.checkmarks li:before {
 .PopUp footer span {
   font-size: 14px;
 }
-.PopUp footer button {
+.PopUp footer button,
+.PopUp footer .btn {
   height: 50px;
   background-color: #33b1eb;
   color: #ffffff;
@@ -283,8 +284,16 @@ ul.checkmarks li:before {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.PopUp footer button:hover {
+.PopUp footer button:hover,
+.PopUp footer .btn:hover {
   background-color: #1599d6;
+}
+.PopUp footer .btn {
+  display: inline-block;
+  padding-top: 12px;
+}
+.PopUp footer.text-center {
+  text-align: center;
 }
 /*#endregion */
 /*#region MainHeader */
@@ -560,4 +569,3 @@ ul.checkmarks li:before {
     font-size: 14px;
   }
 }
-/*#endregion */

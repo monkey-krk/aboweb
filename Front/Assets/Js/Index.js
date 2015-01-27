@@ -86,6 +86,12 @@
         $Popup.addClass("active");
         e.preventDefault();
     });
+    $(".BtnConfirmation").click(function (e) {
+        var $Popup = $(".PopUp.Confirmation");
+        RecalculateTop($Popup);
+        $Popup.addClass("active");
+        e.preventDefault();
+    });
     $(".BtnWireTransfer").click(function (e) {
         var $Popup = $(".PopUp.Sepa");
         RecalculateTop($Popup);
