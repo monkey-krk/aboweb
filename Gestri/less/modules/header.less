@@ -1,0 +1,142 @@
+/*======== Header ========*/
+
+/* Top Banner */
+.top-banner {
+  background: @blue2 url('../img/bg-gestri.png')repeat-y left center;
+  background-size: cover;
+  padding-top: 30px;
+  @media (min-width: @screen-sm-min) {
+    background-size: 120%;
+  }
+  @media (min-width: @screen-md-min) {
+    background-size: 100%;
+  }
+}
+
+  .logo {
+    h1 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin: 0;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url('../img/gestri-logo.png')no-repeat center center;
+        background-size: 100%;
+        margin-right: 3px;
+      }
+      a {
+        color: #fff;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #fff;
+          text-decoration: none;
+          outline: none;
+        }
+        &:active {
+          position: relative;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+
+  .create-account {
+    margin-top: -5px;
+    > a {
+      font-size: 14px;
+      color: #fff;
+      display: inline-block;
+      text-decoration: none;
+      opacity: .7;
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        position: relative;
+        top: -4px;
+        -webkit-transition: all .2s ease-in-out;
+           -moz-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+        opacity: 1;
+        &:after {
+          background: #fff;
+        }
+      }
+    }
+    .dropdown {
+      margin-left: 10px;
+      display: inline-block;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .thecaret {
+        display: inline-block;
+        width: 7px;
+        height: 4px;
+        background: url('../img/caret.png');
+        background-size: 100%;
+        margin-left: 2px;
+      }
+      .dropdown-menu {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        li {
+          a {
+            padding: 0;
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .top-banner-text {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    color: #fff;
+    text-align: center;
+    h2 {
+      color: #fff;
+      max-width: 500px;
+      .center-block();
+    }
+    p {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    .banner-buttons {
+      margin-top: 20px;
+      .btn {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .top-banner-graphics {
+    .center-block();
+    img {
+      .img-center();
+    }
+  }
+
+

@@ -1,0 +1,84 @@
+/*======== Global ========*/
+
+@import url('fonts/brandon.less');
+
+body {
+  font-family: @brandon;
+  font-size: 16px;
+  color: @text;
+  line-height: 1.5;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+/* Typo */
+a {
+  color: @blue;
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(@blue, 10%);
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: @text2;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Buttons */
+.btn {
+  height: 45px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  border-radius: 45px;
+  font-weight: 500;
+  -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+     -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+          transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.btn-blue {
+  .button-variant(#fff; @blue; @blue);
+}
+
+.btn-red {
+  .button-variant(#fff; @red; @red);
+}
+
+.btn-green {
+  .button-variant(#fff; @green; @green);
+}
+
+/* Forms */
+form {
+  .form-control {
+    border-color: #DADFE3;
+    border-radius: 3px;
+    box-shadow: none!important;
+    -webkit-appearance: none;
+  }
+  input,
+  select {
+    &.form-control {
+      height: 45px;
+    }
+  }
+}
+
+/* Layout */
+.container-fluid {
+  max-width: 1200px;
+  .center-block();
+}
